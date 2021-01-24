@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="FrameworkTest" parallel="tests" thread-count="2">
+    <test name="FrameworkTest">
+        <classes>
+            <class name="Test.FrameworkTest">
+                <methods>
+                    <include name="searchTest"/>
+                    <include name="OpenPasajAndCheckBasket"/>
+                    <include name="OpenPasajAndCheckInstallments"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
